@@ -1,0 +1,571 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+--font-weight1: 400;
+--font-weight2: 600;
+--font-weight3: 700;
+--font-size:16px; 
+--dark-blue: hsl(259.35, 14.31%, 42.47%);
+--light-blue: hsl(214.92, 61.76%, 90.77%);
+--sky-blue: hsl(200.57, 67.84%, 85.37%);
+--light-cornflower-blue: hsl(215.53, 65.10%, 85.39%);
+--white: hsl(0, 100%, 100%);
+--black: hsl(0, 0%, 0%);
+--blue:#6382eb;
+}
+*{
+font-family: "Poppins", sans-serif;
+font-style: normal;
+box-sizing: border-box;
+margin: 0px;
+background-color: var(--white);
+}
+
+/*============
+header section
+=============*/
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+header  img{
+    max-width: 200px;
+    height: auto;
+}
+
+nav {
+   display: flex;
+   gap: 20px;
+}
+
+nav a {
+  color: var(--dark-blue);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover{
+    color: var(--black);
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-blue);
+}
+
+.burger .line:hover {
+  background-color: var(--blue);
+}
+/*===============
+section-health
+===============*/
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-image: url(images/dots.png);
+   background-repeat: no-repeat;
+}
+
+.div-text{
+    text-align: left;
+   
+    
+}
+
+.div-text h1{
+    padding: 15px;
+    font-weight: var(--font-weight2);
+}
+.div-text p{
+  padding: 15px;
+  color: var(--dark-blue); 
+  font-weight: var();  
+}
+.div-text button{
+ margin: 15px;
+ border-radius:30px;
+ padding: 10px 20px;
+ border: var(--blue) 1px solid;
+ background-color:var(--blue);
+ color: var(--white);
+}
+.div-text button:hover{
+background-color: var(--white);
+color: var(--blue);
+border: var(--blue) solid 1px;
+}
+.health-img img {
+
+    
+max-width: 500px;
+}
+
+
+/*===========
+our-services
+=============*/
+.our-services{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+.our-services h2{
+    padding: 15px;
+}
+.our-services hr{
+width: 40px;
+margin: auto;
+color: var(--black);
+}
+.our-services p{
+    padding: 15px;
+    color: var(--dark-blue);
+}
+/*==========
+grid-section
+============*/
+.grid-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-image: url(images/left-wave.png);
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+ 
+.card{
+    
+    border-radius: 20px;
+    box-shadow: 4px 1px 10px 3px rgba(27, 26, 26, 0.2);
+    height: 250px;
+     padding: 20px;
+}
+.card p{
+    color: var(--dark-blue);
+}
+
+/*==========
+btn-div
+==========*/
+.btn{
+ display: flex;
+  justify-content: center;  
+  align-items: center;    
+  padding-bottom: 100px; 
+ } 
+.btn button{
+   border: 1px var(--blue) solid; 
+   color: var(--blue);
+   border-radius: 20px;
+   padding: 10px 25px;
+
+}
+.btn button:hover{
+   color: var(--white);
+  cursor: pointer;
+   background-color: var(--blue);
+
+}
+/*============
+LHP-section
+=============*/
+.LHP-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.div-text button{
+    margin: 15px;
+ border-radius:30px;
+ padding: 10px 20px;
+ background-color: var(--white);
+color: var(--blue);
+border: var(--blue) solid 1px;
+}
+.div-text button:hover{
+ border: var(--blue) 1px solid;
+ background-color:var(--blue);
+ color: var(--white);
+}
+/*===========
+download
+========*/
+.download{
+     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.div-text button{
+    margin: 15px;
+ border-radius:30px;
+ padding: 10px 20px;
+ background-color: var(--white);
+color: var(--blue);
+border: var(--blue) solid 1px;
+}
+.div-text button:hover{
+ border: var(--blue) 1px solid;
+ background-color:var(--blue);
+ color: var(--white);
+}
+
+/*================
+our-customer
+==================*/
+.our-customer{
+ background-color: var(--blue);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  
+  }
+
+
+  .our-customer h2 {
+  background-color: var(--blue);
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  color: var(--white);
+}
+.image{
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  
+  
+}
+.image img{
+  background-color: var(--blue);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;}
+
+  .image h3{
+  background-color: var(--blue);
+  font-size: 15px;
+  color: #fff;
+  }
+  span{
+    background-color: #6382eb;
+    padding: 20px;
+  }
+  .founder{
+  background-color: var(--blue);
+  font-size: 14px;
+  padding: 10px;
+  color: white;
+  }
+
+  .quote {
+  background-color: var(--blue);
+  color: white;
+  padding: 10px;
+}
+/*====================
+Grid
+====================*/
+.grid-section1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-image: url(images/right-wave.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 50px;
+    
+}
+ 
+.card1{
+    border-radius: 20px;
+    box-shadow: 4px 1px 10px 3px rgba(27, 26, 26, 0.2);
+    height: 500px;
+    
+}
+.card1 img{
+    border-radius: 15px 15px 0px 0px ;
+}
+.card1 p{
+    padding: 20px;
+    color: var(--dark-blue);
+}
+.card1 h3{
+    padding: 20px;
+}
+.card1 a{
+    padding: 0px 20px;
+    color: var(--blue);
+}
+
+
+/*============
+footer
+=============*/
+.footer {
+  background-color: var(--blue);
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.footer-logo{
+  background-color:var(--blue);
+}
+
+.footer-logo img{
+background-color: #6382eb;
+}
+
+.footer-logo p{
+  background-color: #6382eb;
+  color: white;
+  padding: 10px;
+}
+.footer-column{
+  background-color: #6382eb;
+}
+.footer-column h4{
+  color: white;
+ background-color: var(--blue);
+}
+.footer-column a{
+  display:block;
+  padding: 5px;
+  background-color: var(--blue);
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover{
+  
+  text-decoration: underline;
+}
+
+/*=================
+media query
+==================*/
+@media (max-width: 1300px) {
+    header{
+    padding: 20px 50px;
+}
+  
+
+.grid-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-image: url(images/left-wave.png);
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.grid-section1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-image: url(images/right-wave.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 50px;
+    
+}
+}
+
+@media (max-width: 1000px){
+
+nav {
+   display: flex;
+   gap: 0px;
+}
+
+.health-img img {
+max-width: 350px;
+}
+nav a {
+  color: var(--dark-blue);
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.footer{
+  display: block;
+  padding: 50px 100px;
+  background-color:var(--blue);
+}
+
+.footer-column{
+  display: flex;
+  background-color: #6382eb;
+  padding: 20px 0px;
+}
+
+.footer-column a{
+ 
+  padding: 0px 15px;
+}
+}
+
+@media (max-width: 850px){
+   section {
+  width: 100%;
+  display: flex; 
+  flex-direction: column-reverse;  
+  align-items: center;
+  padding-top: 20px;      
+}
+
+  .div-text{
+    text-align: center;
+   
+    
+}
+
+.grid-section{
+   
+    grid-template-columns: repeat(1,350px);
+    
+    
+}
+.grid-section1{
+   
+    grid-template-columns: repeat(1,350px);
+    
+    
+}
+
+.health-img img {
+max-width: 300px;
+}
+.LHP-section{
+    display: flex; 
+  flex-direction: column;  
+  align-items: center;  
+   
+}
+.download{
+    display: flex; 
+  flex-direction: column-reverse;  
+  align-items: center; 
+}
+
+.footer{
+  display: block;
+  padding: 50px 50px;
+  background-color:var(--blue);
+}
+
+
+.footer-column a{
+ 
+  padding: 0px 15px;
+}
+
+
+
+
+
+
+
+
+  .our-customer h2 {
+  background-color: var(--blue);
+  text-align: center;
+  padding: 20px;
+  color: var(--white);
+}
+.image{
+  display: block;
+  align-items: center;
+  text-align: center;
+  
+  
+}
+
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  header {
+    padding: 20px 30px;
+  }
+
+  
+  .quote {
+  background-color: var(--blue);
+  color: white;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.footer-logo p{
+  font-size: 15px;
+}
+.footer-column h4{
+font-size: 15;
+font-weight: var(--font-weight3);
+}
+.footer-column a{
+ font-size: 13px;
+ padding: 5px;
+}
+}
