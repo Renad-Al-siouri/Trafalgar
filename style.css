@@ -19,7 +19,7 @@ font-family: "Poppins", sans-serif;
 font-style: normal;
 box-sizing: border-box;
 margin: 0px;
-background-color: var(--white);
+
 }
 
 /*============
@@ -247,14 +247,14 @@ our-customer
 
 
   .our-customer h2 {
-  background-color: var(--blue);
+  
   text-align: center;
   padding: 20px;
   font-weight: bold;
   color: var(--white);
 }
 .image{
-  background-color: var(--blue);
+  
   display: flex;
   justify-content: space-around;
   padding: 30px;
@@ -262,14 +262,14 @@ our-customer
   
 }
 .image img{
-  background-color: var(--blue);
+  
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 3px solid white;}
 
   .image h3{
-  background-color: var(--blue);
+  
   font-size: 15px;
   color: #fff;
   }
@@ -278,14 +278,14 @@ our-customer
     padding: 20px;
   }
   .founder{
-  background-color: var(--blue);
+  
   font-size: 14px;
   padding: 10px;
   color: white;
   }
 
   .quote {
-  background-color: var(--blue);
+ 
   color: white;
   padding: 10px;
 }
@@ -338,30 +338,20 @@ footer
   justify-content: space-around;
   
 }
-.footer-logo{
-  background-color:var(--blue);
-}
-
-.footer-logo img{
-background-color: #6382eb;
-}
-
 .footer-logo p{
-  background-color: #6382eb;
+  
   color: white;
   padding: 10px;
 }
-.footer-column{
-  background-color: #6382eb;
-}
+
 .footer-column h4{
   color: white;
- background-color: var(--blue);
+ 
 }
 .footer-column a{
   display:block;
   padding: 5px;
-  background-color: var(--blue);
+  
   color: white;
   text-decoration: none;
 }
@@ -551,7 +541,6 @@ max-width: 300px;
 
   
   .quote {
-  background-color: var(--blue);
   color: white;
   padding: 10px;
   font-size: 13px;
@@ -567,5 +556,9 @@ font-weight: var(--font-weight3);
 .footer-column a{
  font-size: 13px;
  padding: 5px;
+ 
+}
+.footer-column {
+ flex-direction: column;
 }
 }
